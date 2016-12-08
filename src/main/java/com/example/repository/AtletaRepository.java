@@ -12,5 +12,5 @@ import java.util.List;
 public interface AtletaRepository extends JpaRepository<Atleta, Long>{
     List<Atleta> findByNacionalidadContains(String nacionalidad);
     List<Atleta> findByFechaNacimientoBefore(LocalDate fechaNacimiento);
-    List<Atleta> findByNombreContains(String nombre);
+    List<Atleta> findByNombreIs(String nombre);
 }

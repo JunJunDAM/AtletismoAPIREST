@@ -17,11 +17,11 @@ public class MedallaService {
 
     public void medallas(){
         Medalla m1 = new Medalla(TipoMedalla.ORO,"Atletismo");
-        m1.setAtleta("Usain");
+    //    m1.setAtleta(aRepository.findByNombreIs("Usain"));
         Medalla m2 = new Medalla(TipoMedalla.PLATA,"Atletismo");
-        m2.setAtleta("Mohamed");
+    //    m2.setAtleta("Mohamed");
         Medalla m3 = new Medalla(TipoMedalla.BRONZE,"Atletismo");
-        m3.setAtleta("Askana");
+    //    m3.setAtleta("Askana");
 
         mRepository.save(m1);
         mRepository.save(m2);
